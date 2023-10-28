@@ -2,7 +2,7 @@
   "name": "hash-css-selector",
   "description": "A function to hash CSS selectors, can be used with postcss-modules to generate short static unique class names",
   "packageManager": "yarn@4.0.0",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "type": "module",
   "author": "Vitaly Rtishchev <rtivital@gmail.com>",
   "engines": {
