@@ -1,1 +1,1 @@
-export { add } from './add';
+export { hashCSSSelector, generateScopedName, createGenerateScopedName } from './hash-css-selector';

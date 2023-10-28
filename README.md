@@ -1,35 +1,47 @@
-# ts-package-template
+# hash-css-selector
 
-A template to publish a TypeScript package to npm.
-
-Included tools:
-
-- Yarn v4
-- Rollup
-- esbuild
-- jest
-- prettier
-- ESLint
+A function to hash CSS selectors, can be used with postcss-modules to generate short static unique class names.
 
 ## Usage
 
-- Click "Use this template" button to create a new repository from this template
-- Clone the new repository
-- Change `package.json` to your own package name, description, etc. **!important**: change `repository.url` and other repository links to your own repository url
-- Install dependencies: `yarn` (other package managers are not supported)
-- Write your code in `src/` directory
-- Run `npm run release` to build and publish your package to npm
+`hashCSSSelector` returns a 8 character long hash of the given string. The function is deterministic, so the same input will always result in the same output.
 
-## Publishing to npm
+```tsx
+import { hashCSSSelector } from 'hash-css-selector';
 
-Use `release` script to publish the package:
+hashCSSSelector('test-class'); // -> 'm-a530cc7d'
+hashCSSSelector('another-test-class'); // -> 'm-c43ac187'
 
-- `npm run release` – release a new patch version to npm
-- `npm run release minor` – release a new minor version to npm
-- `npm run release major` – release a new major version to npm
-- `npm run release minor -- --stage alpha` – release a new minor alpha version to npm (for example, `1.1.0-alpha.0`)
+// Default prefix is 'm'
+// Customize prefix by passing a second argument
+hashCSSSelector('test-class', 'my-prefix'); // -> 'my-prefix-a530cc7d'
+```
 
-Note that release script will always publish public packages to npm. If you want to publish a private package, change release script in `scripts/release.ts`.
+## Usage with postcss-modules
+
+With default `m` prefix:
+
+```tsx
+import { generateScopedName } from 'hash-css-selector';
+
+postcss([
+  require('postcss-modules')({
+    generateScopedName: generateScopedName,
+  }),
+]);
+```
+
+With custom prefix:
+
+```tsx
+import { createGenerateScopedName } from 'hash-css-selector';
+
+postcss([
+  require('postcss-modules')({
+    generateScopedName: createGenerateScopedName('custom-prefix'),
+  }),
+]);
+```
 
 ## License
 

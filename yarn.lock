@@ -1308,42 +1308,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rtivital/ts-package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@rtivital/ts-package-template@workspace:."
-  dependencies:
-    "@rollup/plugin-commonjs": "npm:^25.0.7"
-    "@rollup/plugin-node-resolve": "npm:^15.2.3"
-    "@rollup/plugin-replace": "npm:^5.0.4"
-    "@types/fs-extra": "npm:^11"
-    "@types/jest": "npm:^29.5.6"
-    "@types/node": "npm:^20.8.9"
-    "@types/signale": "npm:^1"
-    "@types/yargs": "npm:^17.0.29"
-    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
-    "@typescript-eslint/parser": "npm:^6.9.0"
-    esbuild: "npm:^0.19.5"
-    eslint: "npm:^8.52.0"
-    esno: "npm:^0.17.0"
-    execa: "npm:^8.0.1"
-    fs-extra: "npm:^11.1.1"
-    jest: "npm:^29.7.0"
-    new-github-release-url: "npm:^2.0.0"
-    open: "npm:^9.1.0"
-    prettier: "npm:^3.0.3"
-    rimraf: "npm:^5.0.5"
-    rollup: "npm:^4.1.4"
-    rollup-plugin-esbuild: "npm:^6.1.0"
-    rollup-plugin-node-externals: "npm:^6.1.2"
-    signale: "npm:^1.4.0"
-    simple-git: "npm:^3.20.0"
-    ts-jest: "npm:^29.1.1"
-    typescript: "npm:^5.2.2"
-    version-next: "npm:^1.0.2"
-    yargs: "npm:^17.7.2"
-  languageName: unknown
-  linkType: soft
-
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
   resolution: "@sinclair/typebox@npm:0.27.8"
@@ -3214,6 +3178,42 @@ __metadata:
   checksum: ebdb2f4895c26bb08a8a100b62d362e49b2190bcfd84b76bc4be1a3bd4d254ec52d0dd9f2fbcc093fc5eb878b20c52146f9dfd33e2686ed28982187be593b47c
   languageName: node
   linkType: hard
+
+"hash-css-selector@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "hash-css-selector@workspace:."
+  dependencies:
+    "@rollup/plugin-commonjs": "npm:^25.0.7"
+    "@rollup/plugin-node-resolve": "npm:^15.2.3"
+    "@rollup/plugin-replace": "npm:^5.0.4"
+    "@types/fs-extra": "npm:^11"
+    "@types/jest": "npm:^29.5.6"
+    "@types/node": "npm:^20.8.9"
+    "@types/signale": "npm:^1"
+    "@types/yargs": "npm:^17.0.29"
+    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
+    "@typescript-eslint/parser": "npm:^6.9.0"
+    esbuild: "npm:^0.19.5"
+    eslint: "npm:^8.52.0"
+    esno: "npm:^0.17.0"
+    execa: "npm:^8.0.1"
+    fs-extra: "npm:^11.1.1"
+    jest: "npm:^29.7.0"
+    new-github-release-url: "npm:^2.0.0"
+    open: "npm:^9.1.0"
+    prettier: "npm:^3.0.3"
+    rimraf: "npm:^5.0.5"
+    rollup: "npm:^4.1.4"
+    rollup-plugin-esbuild: "npm:^6.1.0"
+    rollup-plugin-node-externals: "npm:^6.1.2"
+    signale: "npm:^1.4.0"
+    simple-git: "npm:^3.20.0"
+    ts-jest: "npm:^29.1.1"
+    typescript: "npm:^5.2.2"
+    version-next: "npm:^1.0.2"
+    yargs: "npm:^17.7.2"
+  languageName: unknown
+  linkType: soft
 
 "hasown@npm:^2.0.0":
   version: 2.0.0
